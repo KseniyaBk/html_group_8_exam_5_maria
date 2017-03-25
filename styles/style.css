@@ -43,7 +43,7 @@ h4 {
 .list--styled li {
 	list-style: none;
 	padding-left: 43px;
-	background: url(../images/icon-arrow-01.svg) 15px 3px/12px 14px no-repeat;
+	background: url(../images/icon-arrow.svg) 15px 3px/12px 14px no-repeat;
 	padding-bottom: 4px;
 }
 .img-responsive {
@@ -89,9 +89,6 @@ h4 {
 	text-transform: uppercase;
 }
 
-
-
-
 .header {
 	background: #d34346;
 	border-bottom: 10px solid #bd2d30;
@@ -99,18 +96,27 @@ h4 {
 .logo {
 	display: inline-block;
 	margin-top: 19px;
-	width: 162px;
 	height: 41px;
 }
+.logo__large {
+	display: none;
+}
+@media screen and (min-width: 992px) {
+	.logo__large {
+		display: block;
+	}
+	.logo__sm {
+		display: none;
+	}
+}
+
+
 .menu {
 	display: none;
-	margin-left: 11%;
 	position: absolute;
-	top: 77px;
-	right: 0;
 	background: #d34346;
-	min-width: 300px;
 	text-align: right;
+	z-index: 50;
 }
 .menu__toggle {
 	float: right;
@@ -144,12 +150,13 @@ h4 {
 	color: #fff;
 	font-size: 20px;
 	display: inline-block;
-	margin: 30px 10px 10px 30px;
+	margin: 30px 10px 10px 1%;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .menu {
   	display: block;
   	position: static;
+  	margin-left: 11%;
   }
   .menu__link {
   	float: left;
@@ -166,20 +173,18 @@ h4 {
 }
 .slider__item {
 	position: relative;
+	background: url(../images/slider-image-1.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .slider__content {
-	position: absolute;
-	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	min-height: 100%;;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 50px;
 }
 .slider__caption {
-	position: absolute;
-	bottom: 60px;
+
+	margin: 11% 0 5%;
 
 }
 .slider__caption {
