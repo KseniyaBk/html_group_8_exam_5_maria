@@ -15,14 +15,25 @@ body {
 	height: 41px;
 }
 .menu {
-	margin-left: 11%;;}
+	display: none;
+	margin-left: 11%;
+	position: absolute;
+	top: 77px;
+	right: 0;
+	background: #d34346;
+	min-width: 300px;
+	text-align: right;
+}
+.menu__toggle {
+	float: right;
+}
 .menu__link {
 	font-size: 1.2em;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	float: left;
-	padding: 31px 30px;
+	display: block;
+	padding: 17px 30px;
 	font-weight: 700;
 }
 .menu__link:hover,
@@ -40,4 +51,23 @@ body {
 	font-size: 20px;
 	display: inline-block;
 	margin: 30px 9px 10px;;
+}
+.menu__toggle {
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	margin: 30px 10px 10px 30px;
+}
+@media (min-width: 992px) {
+  .menu {
+  	display: block;
+  	position: static;
+  }
+  .menu__link {
+  	float: left;
+  	padding: 31px 30px;
+  }
+  .menu__toggle {
+  	display: none;
+  }
 }
