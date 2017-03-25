@@ -1,0 +1,43 @@
+body {
+	font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 12px;
+	color: #212121;
+}
+
+.header {
+	background: #d34346;
+	border-bottom: 10px solid #bd2d30;
+}
+.logo {
+	display: inline-block;
+	margin-top: 19px;
+	width: 162px;
+	height: 41px;
+}
+.menu {
+	margin-left: 11%;;}
+.menu__link {
+	font-size: 1.2em;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	float: left;
+	padding: 31px 30px;
+	font-weight: 700;
+}
+.menu__link:hover,
+.menu__link:active,
+.menu__link:focus,
+.menu__link.active {
+	background: #bd2d30;
+}
+.social {}
+.social--right {
+	margin-left: auto;
+}
+.social__icon {
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	margin: 30px 9px 10px;;
+}
