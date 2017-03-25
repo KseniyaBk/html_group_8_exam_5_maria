@@ -176,7 +176,6 @@ h4 {
 .slider__item {
 	position: relative;
 	background: url(../images/slider-image-1.jpg) center center no-repeat;
-	-webkit-background-size: cover;
 	background-size: cover;
 }
 .slider__content {
@@ -280,8 +279,13 @@ h4 {
 	margin-bottom: 70px;
 }
 .plan__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	margin-bottom: 40px;
 }
@@ -334,6 +338,7 @@ h4 {
 	font-weight: 600;
 	color: #fff;
 	text-decoration: none;
+	-ms-flex-item-align: baseline;
 	align-self: baseline;
 }
 .plan.active .plan__button {
