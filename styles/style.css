@@ -257,7 +257,7 @@ h4 {
 	font-size: 12px;
 }
 .prices {
-
+	background: #efefef;
 }
 .prices__content {
 	padding: 4.4% 0 4%;;
@@ -266,22 +266,24 @@ h4 {
 .plan {
 	width: 25%;
 	max-width: 270px;
+	min-width: 200px;
 	background: #f7f7f7;
 	position: relative;
 	min-height: 343px;
-	margin-bottom: 70px;;
+	margin-bottom: 70px;
 }
 .plan__wrapper {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 40px;;
+	margin-bottom: 40px;
 }
 .plan__price {
 	line-height: 36px;
 	padding: 7px 27px 11px;
 	font-weight: 500;
 	border-bottom: 1px solid #efefef;
-	font-size: 25px;;
+	font-size: 25px;
 }
 .plan.active .plan__price,
 .plan.active .plan__list
@@ -326,4 +328,46 @@ h4 {
 	color: #fff;
 	text-decoration: none;
 	align-self: baseline;
+}
+.plan.active .plan__button {
+	background: #d34346;
+}
+.invitation {
+	background: #f7f7f7;
+	padding: 40px 43px;
+}
+.invitation__title{
+	font-size: 18px;
+	margin: 0;;
+
+}
+.invitation__text{
+	margin-top: 0;
+	line-height: 1.5;
+	
+}
+.banner {
+	background: #d34346;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	text-align: justify;
+	padding: 10px 10px;
+	max-width: 191px;;
+}
+.banner__sm {
+	font-size: 18px;
+	line-height: 16px;
+	font-weight: 600;
+}
+.banner__lg{
+	font-size: 29px;
+	line-height: 26px;
+	font-weight: 600;
+
+}
+.footer {
+	background: #314559;
+	padding: 1px 0;
+	color: #fff;
 }
